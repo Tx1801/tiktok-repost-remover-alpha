@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 260px;
+      padding: 15px;
+      background: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .titulo {
+      text-align: center;
+      color: #ff0050;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    #start {
+      background: #ff0050;
+      color: white;
+    }
+
+    #stop {
+      background: #2a2a2a;
+      color: white;
+    }
+
+    #contador, #status {
+      margin-top: 15px;
+      padding: 12px;
+      background: #1e1e1e;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="titulo">TikTok Repost Remover</h2>
+
+  <button id="start">▶️ Iniciar</button>
+  <button id="stop">⏹️ Parar</button>
+
+  <div id="contador">Republicações removidas: 0</div>
+  <div id="status">Aguardando comando...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
